@@ -7,6 +7,7 @@ body
 
 
 a 
+	color #b2b2b2
 	text-decoration none
 h2
 	font-weight 400
@@ -29,6 +30,23 @@ h2
 .margin-right-medium
 	margin-right 2.5em	
 
+.padding-top
+	padding-top 4em
+.padding-bottom
+	padding-bottom 4em
+.padding-left
+	padding-left 4em
+.padding-right
+	padding-right 4em
+
+.padding-top-large
+	padding-top 12em
+.padding-bottom-large
+	padding-bottom 12em
+.padding-left-large
+	padding-left 12em
+.padding-right-large
+	padding-right 12em
 
 .breaker-left
 	border-left 1px solid #edc951
@@ -116,18 +134,14 @@ header
 			margin-left .5em		
 
 .how-to-work
-	margin-top 40px
-	position relative	
-	.vertical-line
-		border-left 1px solid #b2b2b2
-		left 0
-		height 1000px
-		position absolute
-		top 101px
-		margin 0 auto
-		right 0
-		width 2px
-		z-index -100
+	max-width 1100px
+	margin 2.5em auto
+
+
+	.step-1,.step-2,.step-3
+		background white
+		position relative
+
 
 	.circle-number-step
 		border-radius 50%
@@ -143,27 +157,39 @@ header
 			font-weight 100
 			font-size 50px
 	
-	.wrapper-text-img	
-		overflow hidden
 	.copy-lead,.img-browser
 		display inline-block
 		vertical-align top
 	
 	.img-browser
-		width 50%
-		margin-left 80px
+		width 55%
+		z-index 1000
 		img
-			box-shadow rgba(0, 0, 0, .5) 0px  0px 40px
+			box-shadow rgba(0, 0, 0, .5) 0px  0px 20px
 	.copy-lead
 		color #b2b2b2
-		width 35%
+		width 37%
 		h3
 			font-size 36px
 			font-weight 100
 		p
 			font-size 20px
+
+	.vertical-line
+		border-left 1px solid #b2b2b2
+		left 0
+		height 739px
+		position absolute
+		top 101px
+		margin 0 auto
+		right 0
+		width 1px
+		z-index 0
+		
 	.step-4
+		background url('../assets/images/many_dollars.png') no-repeat center -20px
 		color #b2b2b2
+		padding-top 30px
 		h3
 			font-size 36px
 			font-weight 100
@@ -181,6 +207,11 @@ header
 				list-style none
 				list-style-image url()
 				text-decoration none
+		.circle-green
+			background #71d666
+			border 1px solid #71d666
+			color white
+
 .maps-timeline-lead
 	background url('../assets/images/maps-timeline.jpg')
 	color white
@@ -223,4 +254,5 @@ footer
 					margin-top -42px
 
 	.footer-credits
+		position relative
 		padding 0 0 2em 2em

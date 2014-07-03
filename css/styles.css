@@ -184,6 +184,7 @@ body {
   font-size: 18px;
 }
 a {
+  color: #b2b2b2;
   text-decoration: none;
 }
 h2 {
@@ -212,6 +213,30 @@ h2 {
 }
 .margin-right-medium {
   margin-right: 2.5em;
+}
+.padding-top {
+  padding-top: 4em;
+}
+.padding-bottom {
+  padding-bottom: 4em;
+}
+.padding-left {
+  padding-left: 4em;
+}
+.padding-right {
+  padding-right: 4em;
+}
+.padding-top-large {
+  padding-top: 12em;
+}
+.padding-bottom-large {
+  padding-bottom: 12em;
+}
+.padding-left-large {
+  padding-left: 12em;
+}
+.padding-right-large {
+  padding-right: 12em;
 }
 .breaker-left {
   border-left: 1px solid #edc951;
@@ -311,19 +336,14 @@ header nav {
   margin-left: 0.5em;
 }
 .how-to-work {
-  margin-top: 40px;
-  position: relative;
+  max-width: 1100px;
+  margin: 2.5em auto;
 }
-.how-to-work .vertical-line {
-  border-left: 1px solid #b2b2b2;
-  left: 0;
-  height: 1000px;
-  position: absolute;
-  top: 101px;
-  margin: 0 auto;
-  right: 0;
-  width: 2px;
-  z-index: -100;
+.how-to-work .step-1,
+.how-to-work .step-2,
+.how-to-work .step-3 {
+  background: #fff;
+  position: relative;
 }
 .how-to-work .circle-number-step {
   border-radius: 50%;
@@ -339,24 +359,21 @@ header nav {
   font-weight: 100;
   font-size: 50px;
 }
-.how-to-work .wrapper-text-img {
-  overflow: hidden;
-}
 .how-to-work .copy-lead,
 .how-to-work .img-browser {
   display: inline-block;
   vertical-align: top;
 }
 .how-to-work .img-browser {
-  width: 50%;
-  margin-left: 80px;
+  width: 55%;
+  z-index: 1000;
 }
 .how-to-work .img-browser img {
-  box-shadow: rgba(0,0,0,0.5) 0px 0px 40px;
+  box-shadow: rgba(0,0,0,0.5) 0px 0px 20px;
 }
 .how-to-work .copy-lead {
   color: #b2b2b2;
-  width: 35%;
+  width: 37%;
 }
 .how-to-work .copy-lead h3 {
   font-size: 36px;
@@ -365,8 +382,21 @@ header nav {
 .how-to-work .copy-lead p {
   font-size: 20px;
 }
+.how-to-work .vertical-line {
+  border-left: 1px solid #b2b2b2;
+  left: 0;
+  height: 739px;
+  position: absolute;
+  top: 101px;
+  margin: 0 auto;
+  right: 0;
+  width: 1px;
+  z-index: 0;
+}
 .how-to-work .step-4 {
+  background: url("../assets/images/many_dollars.png") no-repeat center -20px;
   color: #b2b2b2;
+  padding-top: 30px;
 }
 .how-to-work .step-4 h3 {
   font-size: 36px;
@@ -389,6 +419,11 @@ header nav {
   list-style: none;
   list-style-image: url("");
   text-decoration: none;
+}
+.how-to-work .step-4 .circle-green {
+  background: #71d666;
+  border: 1px solid #71d666;
+  color: #fff;
 }
 .maps-timeline-lead {
   background: url("../assets/images/maps-timeline.jpg");
@@ -439,5 +474,6 @@ footer .social-buttons .btn-facebook img:hover {
   margin-top: -42px;
 }
 footer .footer-credits {
+  position: relative;
   padding: 0 0 2em 2em;
 }
