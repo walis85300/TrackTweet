@@ -192,6 +192,36 @@ h2 {
 .margin-top {
   margin-top: 4em;
 }
+.margin-bottom {
+  margin-bottom: 12em;
+}
+.margin-left {
+  margin-left: 4em;
+}
+.margin-right {
+  margin-right: 4em;
+}
+.margin-top-medium {
+  margin-top: 2.5em;
+}
+.margin-bottom-medium {
+  margin-bottom: 2.5em;
+}
+.margin-left-medium {
+  margin-left: 2.5em;
+}
+.margin-right-medium {
+  margin-right: 2.5em;
+}
+.breaker-left {
+  border-left: 1px solid #edc951;
+}
+.text-align-center {
+  text-align: center;
+}
+.text-align-left {
+  text-align: left;
+}
 header {
   background: #fff;
   width: 100%;
@@ -265,13 +295,11 @@ header nav {
   height: 120px;
 }
 .content-main .cinta-comofunciona div {
-  position: relative;
-  top: 10px;
-  padding-top: 30px;
+  line-height: 120px;
 }
 .content-main .arrow {
   margin: 0 auto;
-  width: 100px;
+  width: 160px;
   height: 40px;
 }
 .content-main .arrow:after {
@@ -284,44 +312,132 @@ header nav {
 }
 .how-to-work {
   margin-top: 40px;
+  position: relative;
 }
 .how-to-work .vertical-line {
   border-left: 1px solid #b2b2b2;
   left: 0;
-  height: 500px;
+  height: 1000px;
   position: absolute;
+  top: 101px;
   margin: 0 auto;
   right: 0;
   width: 2px;
   z-index: -100;
-}
-.how-to-work .wrapper-text-img {
-  overflow: hidden;
 }
 .how-to-work .circle-number-step {
   border-radius: 50%;
   border: 1px solid #b2b2b2;
   color: #b2b2b2;
   text-align: center;
-  line-height: 123px;
-  height: 123px;
-  width: 123px;
+  line-height: 100px;
+  height: 100px;
+  width: 100px;
   margin: 0 auto;
 }
 .how-to-work .circle-number-step span.number-step {
   font-weight: 100;
   font-size: 50px;
 }
+.how-to-work .wrapper-text-img {
+  overflow: hidden;
+}
+.how-to-work .copy-lead,
 .how-to-work .img-browser {
+  display: inline-block;
+  vertical-align: top;
+}
+.how-to-work .img-browser {
+  width: 50%;
+  margin-left: 80px;
+}
+.how-to-work .img-browser img {
   box-shadow: rgba(0,0,0,0.5) 0px 0px 40px;
-  float: left;
 }
 .how-to-work .copy-lead {
   color: #b2b2b2;
-  float: right;
-  width: 400px;
+  width: 35%;
 }
 .how-to-work .copy-lead h3 {
-  font-size: 32px;
+  font-size: 36px;
   font-weight: 100;
+}
+.how-to-work .copy-lead p {
+  font-size: 20px;
+}
+.how-to-work .step-4 {
+  color: #b2b2b2;
+}
+.how-to-work .step-4 h3 {
+  font-size: 36px;
+  font-weight: 100;
+}
+.how-to-work .step-4 .wrapper-step-4 {
+  width: 550px;
+  margin: 0 auto;
+}
+.how-to-work .step-4 .wrapper-step-4 p.lead {
+  font-size: 20px;
+  margin-bottom: 1.5em;
+}
+.how-to-work .step-4 .box-grey {
+  background: #f4f4f4;
+  padding: 0.5em 1em;
+  margin-top: 5em;
+}
+.how-to-work .step-4 .box-grey ul {
+  list-style: none;
+  list-style-image: url("");
+  text-decoration: none;
+}
+.maps-timeline-lead {
+  background: url("../assets/images/maps-timeline.jpg");
+  color: #fff;
+  height: 346px;
+  text-align: center;
+}
+.maps-timeline-lead h3 {
+  line-height: 346px;
+  font-size: 40px;
+  font-weight: 400;
+  margin-top: 10px;
+}
+.contact-box {
+  margin: 0 auto;
+}
+footer {
+  background: url("../assets/images/rag-map.png") no-repeat right bottom, url("../assets/logo.png") no-repeat center;
+  height: 450px;
+}
+footer a {
+  color: #09c8db;
+}
+footer ul {
+  list-style: none;
+}
+footer ul li {
+  padding: 0.2em 0;
+}
+footer .contact-right,
+footer .contact-left {
+  display: inline-block;
+  height: 60px;
+  margin: 0 auto;
+  vertical-align: middle;
+  width: 200px;
+}
+footer .social-buttons .btn-facebook {
+  height: 40px;
+  display: inline-block;
+  overflow: hidden;
+  margin-left: 0.5em;
+}
+footer .social-buttons .btn-facebook img {
+  height: auto;
+}
+footer .social-buttons .btn-facebook img:hover {
+  margin-top: -42px;
+}
+footer .footer-credits {
+  padding: 0 0 2em 2em;
 }
