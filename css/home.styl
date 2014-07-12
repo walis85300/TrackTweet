@@ -10,55 +10,60 @@ verde = #35b838
 	color verde
 
 .FAV
-	
 	color amarillo
+
+.content-main
+	height 100%
 
 .option-active
 	
 	border-bottom: 1px solid rojo
 
-#tweets-content
-	
-	position: relative
+.tweets-content
+	width 28%
+	max-height 530px
+	overflow-y scroll
 
-#count-new-tweets
-	
-	border 1px solid red
+
+.count-new-tweets
+		border 1px solid rojo
+		box-shadow rgba(0,0,0,0.3) 0 0 2px
+		display block
+		margin 10px 10px
+		text-align center
+		padding .2em .4em
 
 #tweets
-	
-	float: left
 	font-size: 16px
-	height: 100%
-	margin 50px 10px
-	padding 20px
-	width 350px
+	margin 10px 10px
 
 .tweet
 	
 	// border 1px solid blue
 	background-color: gris_claro
 	margin-bottom 10px
-	padding 20px
-	// position: relative
+	padding .5em 1.2em
 	box-shadow: 1px 1px 1px rgba(black,0.4);
-
-	.avatar
-		
-		position: absolute
+	overflow hidden
 
 	.info-user
-		
-		margin-bottom: 20px
-		margin-left: 60px
-
-	p
-		margin-left 60px
+		overflow hidden
+		line-height 50px
+		max-height 55px
+		figure.avatar
+			margin 0
+			float left
+			img
+				border-radius 50%
+				width 50px
+				height 50px
+		.name-user
+			margin-left 10px
 
 	.icons
 		
 		font-size: 18px
-		margin-left 50px
+		float right
 
 		a
 			margin-right 10px
@@ -66,5 +71,12 @@ verde = #35b838
 			&:last-child
 				
 				margin-right 0
-			
+.map
+	width 71%
+	height 530px
+
+.map,.tweets-content
+	display inline-block
+	vertical-align top
+	
 
