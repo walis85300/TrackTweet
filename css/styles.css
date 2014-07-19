@@ -247,6 +247,10 @@ h2 {
 .text-align-left {
   text-align: left;
 }
+.container-main {
+  width: 1080px;
+  margin: 0 auto;
+}
 header {
   background: #fff;
   border-bottom: 1px solid #f4f4f4;
@@ -491,4 +495,68 @@ footer .footer-credits {
   position: relative;
   padding: 0 0 2em 2em;
   margin-top: 150px;
+}
+.steps {
+  width: 260px;
+  margin: 3em auto;
+}
+.steps .step-1,
+.steps .step-2,
+.steps .step-3 {
+  background: #f4f4f4;
+  border-radius: 50%;
+  border: 1px solid #000;
+  color: #000;
+  display: inline-block;
+  height: 60px;
+  margin-left: 20px;
+  vertical-align: top;
+  line-height: 60px;
+  text-align: center;
+  width: 60px;
+}
+.tipos-promociones {
+  border-bottom: 1px solid #000;
+  padding-bottom: 0.5em;
+  max-width: 800px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.tipos-promociones .seleccion-action {
+  background: #cd853f;
+  color: #fff;
+  padding: 0.4em 1em;
+  float: right;
+}
+.form-promotion {
+  margin: 0 auto;
+  padding: 0 0 2em 0;
+  width: 415px;
+}
+.form-promotion .form-group {
+  margin-top: 2em;
+}
+.form-promotion .form-group input,
+.form-promotion .form-group select {
+  width: 415px;
+}
+.form-promotion .form-group label,
+.form-promotion .form-group input {
+  display: block;
+  margin-bottom: 0.5em;
+}
+.form-promotion .btn-submit {
+  margin-top: 1.5em;
+}
+.form-promotion .btn-submit buttom {
+  background: #cd853f;
+  border: none;
+  color: #fff;
+  display: block;
+  text-align: center;
+  width: 415px;
+}
+.final-text {
+  width: 480px;
+  margin: 0 auto;
 }
