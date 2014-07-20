@@ -1,0 +1,60 @@
+.rojo {
+  color: #cc333f;
+}
+h3 {
+  font-weight: lighter;
+}
+h4 {
+  font-weight: 300;
+}
+h5 {
+  font-weight: 300;
+}
+h4,
+h5 {
+  margin: 0;
+}
+p {
+  margin-top: 4rem;
+}
+input {
+  width: 98%;
+  display: block;
+  height: 30px;
+  padding: 0;
+  margin-bottom: 1rem !important;
+}
+form {
+  width: 300px;
+  margin: 0 auto;
+}
+.wrap {
+  width: 1000px;
+  margin: 4rem auto;
+  border: 2px solid rgba(0,0,0,0.1);
+  padding: 3rem;
+  text-align: center;
+  font-weight: 200;
+}
+.register,
+.message {
+  display: inline-block;
+  vertical-align: top;
+}
+.register {
+  width: 41%;
+  margin-right: 2rem;
+  padding-right: 4rem;
+  border-right: 1px solid rgba(0,0,0,0.2);
+}
+.message {
+  width: 38%;
+}
+.submit {
+  background-color: #00a0b0;
+  border: none;
+  color: #fff;
+  width: 100%;
+  padding: 0;
+  height: 30px;
+}
