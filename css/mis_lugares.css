@@ -1,0 +1,54 @@
+.main {
+  width: 100%;
+  height: 100%;
+}
+.main .places {
+  width: 28%;
+  max-height: 530px;
+  overflow-y: scroll;
+  padding: 0.5rem;
+}
+.main .places .top {
+  line-height: 2rem;
+  margin-bottom: 1rem;
+}
+.main .places .top a {
+  float: right;
+  margin-right: 1rem;
+}
+.main .places .top .title {
+  font-size: 2rem;
+  font-weight: bolder;
+  margin-left: 1rem;
+}
+.main .places .top .new_place {
+  background-color: #00a0b0;
+  color: #fff;
+  font-size: 3rem;
+  height: 2rem;
+  text-align: center;
+  width: 15%;
+}
+.main .places section .place {
+  margin: 0.5rem;
+  padding: 0.5rem;
+  background-color: rgba(0,0,0,0.05);
+}
+.main .places section .place .name {
+  font-weight: 300;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+.main .places section .place .description {
+  font-weight: lighter;
+  font-size: 1rem;
+}
+.main .map {
+  width: 69%;
+  height: 530px;
+}
+.main .places,
+.main .map {
+  display: inline-block;
+  vertical-align: top;
+}
