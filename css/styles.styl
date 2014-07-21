@@ -4,9 +4,9 @@ rojo_primario = #cc333f
 azul_secundario = #00a0b0
 marron = #6a4a3c
 naranja = #eb6841
-amarillo = #edc
-
+amarillo = #edc951
 gris_claro = #f4f4f4
+gris_claro_oscuro = #B2B2B2
 
 
 body
@@ -57,6 +57,8 @@ h2
 	padding-left 12em
 .padding-right-large
 	padding-right 12em
+.right
+	float right
 
 .breaker-left
 	border-left 1px solid #edc951
@@ -66,6 +68,11 @@ h2
 .text-align-left
 	text-align left
 
+.wrap-content
+	max-width 900px
+	margin 2.5em auto
+.p-text
+	font-weight 300
 .container-main
 	width 1080px
 	margin 0 auto
@@ -76,6 +83,7 @@ header
 	height 100px
 	width: 100%
 	h1
+		visibility hidden
 		color white
 	a
 		color #b2b2b2
@@ -285,14 +293,23 @@ footer
 
 
 // Promociones ON
+.promociones
+	margin-bottom 8em
+	font-weight: 300;
+	h1
+		color marron 
+	.cancel
+		background naranja
+		color white
+		padding .5em 1em
+
 .steps
 	width 260px
 	margin 3em auto
 	.step-1,.step-2,.step-3
-		background gris_claro
 		border-radius 50%
-		border 1px solid black
-		color black
+		border 1px solid gris_claro_oscuro
+		color gris_claro_oscuro
 		display inline-block
 		height 60px
 		margin-left 20px
@@ -300,18 +317,26 @@ footer
 		line-height 60px
 		text-align center
 		width 60px
+	.active
+		background rojo_primario
+		border none 
+		color white
+	.pass
+		background rgba(rojo_primario,.7)
+		border none
+		color white
 .tipos-promociones
-	border-bottom 1px solid black
+	border-bottom 1px solid gris_claro_oscuro
 	padding-bottom .5em
 	max-width 800px
 	margin 0 auto
 	overflow hidden
 	.seleccion-action
-		background peru
+		background azul_secundario
 		color white
 		padding .4em 1em
 		float right
-
+	p
 .form-promotion
 	margin 0 auto
 	padding 0 0 2em 0
@@ -327,17 +352,92 @@ footer
 
 	.btn-submit
 		margin-top 1.5em
-		buttom
-			background peru
+		button
+			background azul_secundario
 			border none
 			color white
 			display block
-			// padding .4em 5em 
+			padding .4em 5em 
 			text-align center
 			width 415px
 .final-text
 	width 480px
 	margin 0 auto
+	.guardar
+		background gris_claro_oscuro
+		color white
+		padding .5em .8em
+.promocion
+	border 2px solid gris_claro
+	padding .1em 1em .6em 1em
+	margin 0 auto .6em auto
+	overflow hidden
+	width 800px
+	.date
+		color #9C9C9C
+	p
+		font-weight 300
+	a.ver 
+		background azul_secundario
+		color white
+		float right
+		padding .3em 1.5em
+.new-promotion
+	overflow hidden
+	a
+		background rojo_primario
+		border-bottom: 4px solid #A72C36;
+		color white
+		padding 0.25em 2em
+.detalle-promocion
+	width 800px
+	margin 0 auto
+	.tweet
+		margin 0 auto
+		width 500px
+	.statc
+		
+		text-align center
+		.retweets,.favoritos
+			display inline-block
+			vertical-align top
+			margin-left 2em
+		h3
+			color azul_secundario
+			margin 0
+			font-size 3em
+		span
+			color #9C9C9C
+.primer-rt
+	font-size 16px
+	figure
+		margin 0
+		img
+			width 180px
+			height 180px
+	.tweet-contet
+		width 49%
+	.photo-user
+		width 39%
+	.tweet-contet,.photo-user
+		display inline-block
+		vertical-align top
+.usuario
+	h3
+		color azul_secundario
+		margin 0	
+	.retweets,.favoritos
+		display inline-block
+		padding 0 1em 0 1em
+	.rt-favs
+		text-align center
+		width 300px
+		margin 0 auto
+.icon-book
+	
+	background url('../assets/images/icon-book.png') no-repeat center center 
+	// width 157px
+	height 128px
 // Promociones OFF
 
 
