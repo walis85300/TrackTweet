@@ -10,34 +10,33 @@
 </head>
 <body>
 	<header>
-		<a href="#">
+		<a href="home.html">
 			<div class="logo-brand">
 				
 			</div>
 		</a>
 		<nav>
 			<ul>
-				
-				<li><a href="#">Inicio</a></li>
-
+				<li><a href="home.html">Inicio</a></li>
 				<li><a href="#">Mis Lugares</a></li>
-
-				<li><a href="#" class="option-active">Mis Promociones</a></li>
+				<li><a href="promociones.html" class="option-active">Mis Promociones</a></li>
 
 			</ul>
 		</nav>
 	</header>
-	<div class="container-main">
+	<div class="container-main promociones">
 
 		<div class="steps">
-			<div class="step-1">1</div>
+			<a href="wizard-promocion-1.html">
+				<div class="step-1 pass">1</div>
+			</a>
 			<div class="step-2 active">2</div>
 			<div class="step-3">3</div>
 		</div>
 		<h1>Completa la información de la <strong>Promoción</strong></h1>
 		<p>Asegúrate de escribir la información en todos los campos, para tener éxtio hay que completar la información</p>
 		<section>
-			<form action="" class="form-promotion">
+			<form action="wizard-promocion-3.html" class="form-promotion">
 				<div class="form-group">
 					<label for="">Nombra la Promoción *</label>
 					<input type="text" placeholder="Nombre">
@@ -60,13 +59,16 @@
 					</select>
 				</div>
 				<div class="btn-submit">
-					<buttom type="submit" class="submit">
+					<button type="submit" class="submit">
 						Continuar
-					</buttom>
+					</button>
 
 				</div>
 			</form>
 		</section>
+		<div class="margin-top-medium"> 
+			<a href="home.html" class="cancel">Cancelar</a>
+		</div>		
 	</div>
 </body>
 </html>

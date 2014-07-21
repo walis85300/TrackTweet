@@ -261,6 +261,9 @@ h2 {
   width: 1080px;
   margin: 0 auto;
 }
+.color-azul {
+  color: #00a0b0;
+}
 header {
   background: #fff;
   border-bottom: 1px solid #f4f4f4;
@@ -689,4 +692,16 @@ footer .footer-credits {
 .icon-book {
   background: url("../assets/images/icon-book.png") no-repeat center center;
   height: 128px;
+}
+.icon-megafo {
+  background: url("../assets/images/icon-megafo.png") no-repeat center center;
+  height: 128px;
+}
+.feedback {
+  margin-top: 4em;
+  margin-bottom: 13em;
+}
+.icon-light-console {
+  background: url("../assets/images/icon-light.png") no-repeat 40% center, url("../assets/images/icon-console.png") no-repeat 60% center;
+  height: 150px;
 }
