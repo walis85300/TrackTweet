@@ -1,0 +1,51 @@
+.rojo {
+  color: #cc333f;
+  font-weight: lighter;
+}
+input {
+  display: block;
+  height: 30px;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+main {
+  margin: 0 auto;
+  width: 1000px;
+}
+main h2 {
+  font-size: 40px;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 0;
+}
+main span {
+  font-size: 40px;
+  color: #71d666;
+}
+main .title {
+  text-align: center;
+}
+form {
+  margin: 0 auto;
+  width: 500px;
+}
+form button {
+  border: none;
+  width: 101%;
+}
+.radio-button {
+  padding: 0 3rem;
+}
+.radio-button label {
+  display: inline-block;
+  line-height: 30px;
+  position: relative;
+  width: 100%;
+}
+.radio-button input {
+  float: left;
+  left: -20px;
+  margin: 0;
+  position: absolute;
+  width: 30px;
+}

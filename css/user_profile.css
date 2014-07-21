@@ -1,0 +1,57 @@
+.main {
+  height: 530px;
+}
+.info {
+  background-color: rgba(244,244,244,0.7);
+  padding: 10px;
+}
+.info figure {
+  float: left;
+  margin: 0;
+}
+.info .profile {
+  float: right;
+  width: 270px;
+}
+.info .profile .name-user {
+  font-size: 30px;
+  font-weight: 300;
+}
+.info .follow {
+  background-color: #00a0b0;
+  height: 2rem;
+  line-height: 2rem;
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+}
+.info .follow a {
+  color: #fff;
+}
+.info .wrap {
+  overflow: hidden;
+}
+.self-info {
+  border: 1px solid rgba(204,51,63,0.2);
+  width: 100%;
+  line-height: 2rem;
+  text-align: center;
+}
+.self-info div {
+  display: inline-block;
+  width: 30%;
+}
+.self-info .number {
+  font-weight: bolder;
+  font-size: 1.5em;
+}
+.self-info .subtitle {
+  font-size: 0.5rem;
+  font-weight: lighter;
+}
+#tweets {
+  margin: 0;
+  margin-top: 1rem;
+  padding: 0;
+  width: 100%;
+}
