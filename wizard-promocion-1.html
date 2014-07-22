@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Tracktwwet - Rastrea los tweets</title>
+	<title>Tracktwwet - Promoción Paso 1</title>
 	<link href='http://fonts.googleapis.com/css?family=Raleway:400,300,100' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/home.css">	
 	<link rel="stylesheet" href="css/styles.css">	
@@ -10,22 +10,41 @@
 </head>
 <body>
 	<header>
-		<a href="home.html">
-			<div class="logo-brand">
-				
-			</div>
-		</a>
-		<nav>
-			<ul>
-				
-				<li><a href="home.html">Inicio</a></li>
+		<div class="title-brand">
+			<a href="home.html">
+				<div class="logo-brand">
+					<h1>Tracktweet</h1>
+				</div>
+			</a>
+		</div>
+		<div class="menu-avatar">
+			<nav>
+				<ul>
+					
+					<li><a href="home.html" >Inicio</a></li>
 
-				<li><a href="#">Mis Lugares</a></li>
+					<li><a href="mis_lugares.html">Mis Lugares</a></li>
 
-				<li><a href="promociones.html" class="option-active">Mis Promociones</a></li>
+					<li><a href="promociones.html" class="option-active">Mis Promociones</a></li>
 
-			</ul>
-		</nav>
+				</ul>
+				<span class="search-avatar">
+					<span class="wrap-search">
+						<span class="icon-search"></span>
+						<input class="input-search" type="text" placeholder="Buscar"> 
+					</span>
+					<a id="btn-avatar" href="#" class="avatar-w">
+						<img src="assets/images/walo.jpg" alt="Avatar" width="60px">
+						<span class="icon-down"></span>
+					</a>
+					<span class="submenu">
+						<ul>
+							<li><a href="index.html">Salir</a></li>
+						</ul>
+					</span>
+				</span>
+			</nav>
+		</div>
 	</header>
 	<div class="container-main promociones">
 
@@ -60,5 +79,15 @@
 			<a href="home.html" class="cancel">Cancelar</a>
 		</div>
 	</div>
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script>
+		$('#btn-avatar').on('click',function(){
+			if($('.submenu').hasClass('active'))
+				$('.submenu').removeClass('active');
+			else
+				$('.submenu').addClass('active');
+		});
+
+	</script>	
 </body>
 </html>

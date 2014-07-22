@@ -90,6 +90,8 @@ header
 		color white
 	a
 		color #b2b2b2
+	.menu-sin-avatar
+		line-height: 100px;
 	.menu-avatar
 		float right
 		// width 400px
@@ -100,6 +102,9 @@ header
 				border-radius 50%
 				width 60px
 				height 60px
+			.icon-down
+				position: relative;
+				top: -20px;
 		.wrap-search
 			position relative
 			margin-right 1em
@@ -117,6 +122,29 @@ header
 				border none
 				padding .3em .3em .3em 2em
 				width 150px
+		.submenu
+			display none
+			background gris_claro
+			color gris_claro_oscuro
+			position absolute
+			top 100px
+			text-align center
+			line-height 30px
+			right 0
+			width 120px
+			z-index 9999
+			ul
+				padding 0
+				width 100px
+				li
+					padding 0
+					a
+						padding 1em
+						color gris_claro_oscuro
+		.active
+			display block
+		.search-avatar
+			margin-right 1em
 	nav 
 		height 100px
 		ul

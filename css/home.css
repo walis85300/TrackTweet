@@ -289,6 +289,10 @@ header .menu-avatar .avatar-w img {
   width: 60px;
   height: 60px;
 }
+header .menu-avatar .avatar-w .icon-down {
+  position: relative;
+  top: -20px;
+}
 header .menu-avatar .wrap-search {
   position: relative;
   margin-right: 1em;
@@ -307,6 +311,35 @@ header .menu-avatar .wrap-search .input-search {
   border: none;
   padding: 0.3em 0.3em 0.3em 2em;
   width: 150px;
+}
+header .menu-avatar .submenu {
+  display: none;
+  background: #f4f4f4;
+  color: #b2b2b2;
+  position: absolute;
+  top: 100px;
+  text-align: center;
+  line-height: 30px;
+  right: 0;
+  width: 120px;
+  z-index: 9999;
+}
+header .menu-avatar .submenu ul {
+  padding: 0;
+  width: 100px;
+}
+header .menu-avatar .submenu ul li {
+  padding: 0;
+}
+header .menu-avatar .submenu ul li a {
+  padding: 1em;
+  color: #b2b2b2;
+}
+header .menu-avatar .active {
+  display: block;
+}
+header .menu-avatar .search-avatar {
+  margin-right: 1em;
 }
 header nav {
   height: 100px;

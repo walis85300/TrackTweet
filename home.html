@@ -12,9 +12,9 @@
 	
 	<header>
 		<div class="title-brand">
-			<a href="#">
+			<a href="home.html">
 				<div class="logo-brand">
-					
+					<h1>Tracktweet</h1>
 				</div>
 			</a>
 		</div>
@@ -22,19 +22,19 @@
 			<nav>
 				<ul>
 					
-					<li><a href="#" class="option-active">Inicio</a></li>
+					<li><a href="home.html" class="option-active">Inicio</a></li>
 
-					<li><a href="#">Mis Lugares</a></li>
+					<li><a href="mis_lugares.html">Mis Lugares</a></li>
 
 					<li><a href="promociones.html">Mis Promociones</a></li>
 
 				</ul>
-				<span>
+				<span class="search-avatar">
 					<span class="wrap-search">
 						<span class="icon-search"></span>
 						<input class="input-search" type="text" placeholder="Buscar"> 
 					</span>
-					<a href="#" class="avatar-w">
+					<a id="btn-avatar" href="#" class="avatar-w">
 						<img src="assets/images/walo.jpg" alt="Avatar" width="60px">
 						<span class="icon-down"></span>
 					</a>
@@ -231,10 +231,18 @@
 	</div>
 <link href='https://api.tiles.mapbox.com/mapbox.js/v1.6.4/mapbox.css' rel='stylesheet' />	
 <script src='https://api.tiles.mapbox.com/mapbox.js/v1.6.4/mapbox.js'></script>
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 <script>
 	// Create a map in the div #map
 	// L.mapbox.map('map', 'calosth.h3cflhp5');
 	L.mapbox.map('map', 'examples.map-i86nkdio');
+	$('#btn-avatar').on('click',function(){
+		if($('.submenu').hasClass('active'))
+			$('.submenu').removeClass('active');
+		else
+			$('.submenu').addClass('active');
+	});
+
 </script>
 </body>
 </html>

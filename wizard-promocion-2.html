@@ -2,26 +2,48 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Tracktwwet - Rastrea los tweets</title>
+	<title>Tracktwwet - Promoción Paso 2</title>
 	<link href='http://fonts.googleapis.com/css?family=Raleway:400,300,100' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/styles.css">	
 	<link rel="stylesheet" href="assets/icomoon/style.css">	
 </head>
 <body>
 	<header>
-		<a href="home.html" class="a-brand">
-			<div class="logo-brand">
-				
-			</div>
-		</a>
-		<nav>
-			<ul>
-				<li><a href="home.html">Inicio</a></li>
-				<li><a href="#">Mis Lugares</a></li>
-				<li><a href="promociones.html" class="option-active">Mis Promociones</a></li>
+		<div class="title-brand">
+			<a href="home.html">
+				<div class="logo-brand">
+					<h1>Tracktweet</h1>
+				</div>
+			</a>
+		</div>
+		<div class="menu-avatar">
+			<nav>
+				<ul>
+					
+					<li><a href="home.html" >Inicio</a></li>
 
-			</ul>
-		</nav>
+					<li><a href="mis_lugares.html">Mis Lugares</a></li>
+
+					<li><a href="promociones.html" class="option-active">Mis Promociones</a></li>
+
+				</ul>
+				<span class="search-avatar">
+					<span class="wrap-search">
+						<span class="icon-search"></span>
+						<input class="input-search" type="text" placeholder="Buscar"> 
+					</span>
+					<a id="btn-avatar" href="#" class="avatar-w">
+						<img src="assets/images/walo.jpg" alt="Avatar" width="60px">
+						<span class="icon-down"></span>
+					</a>
+					<span class="submenu">
+						<ul>
+							<li><a href="index.html">Salir</a></li>
+						</ul>
+					</span>
+				</span>
+			</nav>
+		</div>
 	</header>
 	<div class="container-main promociones">
 
@@ -35,6 +57,7 @@
 		<h1>Completa la información de la <strong>Promoción</strong></h1>
 		<p>Asegúrate de escribir la información en todos los campos, para tener éxtio hay que completar la información</p>
 		<section>
+			<div>
 			<form action="wizard-promocion-3.html" class="form-promotion" method="post">
 				<div class="form-group">
 					<label for="">Nombra la Promoción *</label>
@@ -64,10 +87,21 @@
 
 				</div>
 			</form>
+			</div>
 		</section>
 		<div class="margin-top-medium"> 
 			<a href="home.html" class="cancel">Cancelar</a>
 		</div>		
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script>
+		$('#btn-avatar').on('click',function(){
+			if($('.submenu').hasClass('active'))
+				$('.submenu').removeClass('active');
+			else
+				$('.submenu').addClass('active');
+		});
+
+	</script>			
 	</div>
 </body>
 </html>
