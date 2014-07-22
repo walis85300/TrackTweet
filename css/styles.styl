@@ -84,28 +84,54 @@ header
 	border-bottom 1px solid gris_claro
 	height 100px
 	width: 100%
+	// overflow hidden
 	h1
 		visibility hidden
 		color white
 	a
 		color #b2b2b2
-
-	nav 
-		margin-top 22px
+	.menu-avatar
 		float right
-		vertical-align middle
+		// width 400px
+		.avatar-w 
+			position relative
+			top 22px
+			img
+				border-radius 50%
+				width 60px
+				height 60px
+		.wrap-search
+			position relative
+			margin-right 1em
+			.icon-search
+				background gris_claro_oscuro
+				position absolute
+				top -4px
+				width: 30px
+				height 30px
+				
+			.input-search
+				background gris_claro
+				border none
+				padding .3em .3em .3em 2em
+				width 150px
+	nav 
+		height 100px
 		ul
-			vertical-align top
+			display inline
 			li
 				color #b2b2b2
 				display inline-block
 				padding-right 50px
+				&:last-child
+					padding-right 1em
 	.logo-brand
 		background url('../assets/logo.png') no-repeat 20px 10px
 		width 285px
 		height 85px
-	.logo-brand, nav
+	.logo-brand,.title-brand,.menu-avatar
 		display inline-block
+		vertical-align top
 
 .call-to-action
 	background #00a0b0

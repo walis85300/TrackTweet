@@ -277,10 +277,13 @@ header h1 {
 header a {
   color: #b2b2b2;
 }
-header nav {
-  margin-top: 22px;
+header .menu-avatar {
   float: right;
-  vertical-align: middle;
+}
+header .menu-avatar .avatar-w img {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
 }
 header nav ul {
   vertical-align: top;
@@ -296,8 +299,10 @@ header .logo-brand {
   height: 85px;
 }
 header .logo-brand,
-header nav {
+header .title-brand,
+header .menu-avatar {
   display: inline-block;
+  vertical-align: top;
 }
 .call-to-action {
   background: #00a0b0;
