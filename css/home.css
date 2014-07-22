@@ -785,15 +785,39 @@ footer .footer-credits {
   border-bottom: 1px solid #cc333f;
 }
 .tweets-content {
+  margin-left: 7px;
   width: 28%;
   max-height: 530px;
   overflow-y: scroll;
+}
+.tweets-content .new-tweet {
+  height: 3rem;
+}
+.tweets-content .new-tweet .pencil {
+  background-color: rgba(0,0,0,0.4);
+  color: #fff;
+  float: left;
+  font-size: 3rem;
+  height: 100%;
+  text-align: center;
+  width: 15%;
+}
+.tweets-content .new-tweet .write-tweet {
+  height: 100%;
+  float: right;
+  background-color: rgba(0,0,0,0.09);
+  width: 85%;
+}
+.tweets-content .new-tweet .write-tweet div {
+  line-height: 3rem;
+  padding-left: 1rem;
+  color: #808080;
 }
 .count-new-tweets {
   border: 1px solid #cc333f;
   box-shadow: rgba(0,0,0,0.3) 0 0 2px;
   display: block;
-  margin: 10px 10px;
+  margin-top: 5px;
   text-align: center;
   padding: 0.2em 0.4em;
 }
@@ -801,8 +825,7 @@ footer .footer-credits {
   float: left;
   font-size: 16px;
   height: 100%;
-  margin: 50px 10px;
-  padding: 20px;
+  margin-top: 0.4rem;
 }
 .tweet {
   background-color: #f4f4f4;
