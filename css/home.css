@@ -295,10 +295,12 @@ header .menu-avatar .wrap-search {
 }
 header .menu-avatar .wrap-search .icon-search {
   background: #b2b2b2;
+  color: #fff;
   position: absolute;
   top: -4px;
   width: 30px;
-  height: 30px;
+  line-height: 30px;
+  text-align: center;
 }
 header .menu-avatar .wrap-search .input-search {
   background: #f4f4f4;
