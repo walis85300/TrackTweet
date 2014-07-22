@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>New Place - Tracktweet</title>
+	<link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+	<header>
+		<div class="title-brand">
+			<a href="index.html">
+				<div class="logo-brand">
+					<h1>Tracktweet</h1>
+				</div>
+			</a>
+		</div>
+		<div class="menu-avatar">
+			<nav>
+				<ul>
+					
+					<li><a href="home.html">Inicio</a></li>
+
+					<li><a href="mis_lugares.html" class="option-active">Mis Lugares</a></li>
+
+
+					<li><a href="promociones.html">Mis Promociones</a></li>
+
+				</ul>
+				<span class="search-avatar">
+					<span class="wrap-search">
+						<span class="icon-search"></span>
+						<input class="input-search" type="text" placeholder="Buscar"> 
+					</span>
+					<a id="btn-avatar" href="#" class="avatar-w">
+						<img src="assets/images/walo.jpg" alt="Avatar" width="60px">
+						<span class="icon-down"></span>
+					</a>
+					<span class="submenu">
+						<ul>
+							<li><a href="pago.html">Tracktweet Plus</a></li>
+							<li><a href="index.html">Salir</a></li>
+						</ul>
+					</span>
+				</span>
+			</nav>
+		</div>
+	</header>
+	<div class="main">
+		<div class="title">
+			<h1>Nuevo Lugar</h1>
+			<p>Asegúrate de escribir la información en todos los campos, estos son requeridos para guardar con exactitud el nuevo lugar</p>
+		</div>
+		<form action="mis_lugares.html">
+			<div class="form-group">
+				<label for="">Nombre del Lugar*</label>
+				<input type="text" placeholder="Nombre" required>
+			</div>
+			<div class="form-group">
+				<label for="">Describe el lugar*</label>
+				<textarea cols="50" rows="5" required></textarea>
+			</div>
+			<div class="form-group">
+				<label for="">Escribe las Coordenadas del lugar*</label>
+				<input type="text" required>
+			</div>
+			<div class="btn-submit">
+				<button type="submit">Aceptar</button>
+			</div>
+		</form>
+	</div>
+</body>
+</html>

@@ -8,21 +8,21 @@ input {
   margin-bottom: 1rem;
   width: 100%;
 }
-main {
+.main {
   margin: 0 auto;
   width: 1000px;
 }
-main h2 {
+.main h2 {
   font-size: 40px;
   font-weight: 300;
   text-align: center;
   margin-bottom: 0;
 }
-main span {
+.main span {
   font-size: 40px;
   color: #71d666;
 }
-main .title {
+.main .title {
   text-align: center;
 }
 form {
