@@ -1,12 +1,14 @@
 @import 'normalize.styl'
 
-rojo_primario = #cc333f
-azul_secundario = #00a0b0
-marron = #6a4a3c
-naranja = #eb6841
 amarillo = #edc951
+azul_secundario = #00a0b0
 gris_claro = #f4f4f4
 gris_claro_oscuro = #B2B2B2
+marron = #6a4a3c
+naranja = #eb6841
+rojo_primario = #cc333f
+verde = #35b838
+
 
 
 body
@@ -39,6 +41,9 @@ h2
 	margin-left 2.5em
 .margin-right-medium
 	margin-right 2.5em	
+
+.margin-top-small
+	margin-top 1em
 
 .padding-top
 	padding-top 4em
@@ -424,7 +429,13 @@ footer
 	.guardar
 		background gris_claro_oscuro
 		color white
-		padding .5em .8em
+		// padding .5em .8em
+	.btn-wrap
+		.btn-guardar
+			width 109px
+		div
+			display inline-block
+
 .promocion
 	border 2px solid gris_claro
 	padding .1em 1em .6em 1em

@@ -214,6 +214,9 @@ h2 {
 .margin-right-medium {
   margin-right: 2.5em;
 }
+.margin-top-small {
+  margin-top: 1em;
+}
 .padding-top {
   padding-top: 4em;
 }
@@ -324,7 +327,7 @@ header .menu-avatar .submenu {
   text-align: center;
   line-height: 30px;
   right: 0;
-  width: 120px;
+  width: 200px;
   z-index: 9999;
 }
 header .menu-avatar .submenu ul {
@@ -669,7 +672,12 @@ footer .footer-credits {
 .final-text .guardar {
   background: #b2b2b2;
   color: #fff;
-  padding: 0.5em 0.8em;
+}
+.final-text .btn-wrap .btn-guardar {
+  width: 109px;
+}
+.final-text .btn-wrap div {
+  display: inline-block;
 }
 .promocion {
   border: 2px solid #f4f4f4;
