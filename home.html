@@ -54,11 +54,11 @@
 
 			<div class="new-tweet">
 
-				<div class="pencil">
+				<div id="btn-pencil" class="pencil">
 					<span class="icon-write"></span>
 				</div>
-				<div class="write-tweet" contenteditable="true">
-					<div>Escribe un nuevo Tweet</div>
+				<div  id="w-write-tweet" class="write-tweet" contenteditable="true">
+					<div id="write-tweet">Escribe un nuevo Tweet</div>
 				</div>
 				
 			</div>
@@ -251,6 +251,12 @@
 		else
 			$('.submenu').addClass('active');
 	});
+
+	$('#write-tweet, #btn-pencil').on('click',function(){
+
+		$('#write-tweet').text('');
+		$('#w-write-tweet').focus();
+	})
 
 </script>
 

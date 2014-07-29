@@ -355,6 +355,13 @@ header nav ul li {
   display: inline-block;
   padding-right: 50px;
 }
+header nav ul li a {
+  -webkit-transition: all 0.4s ease;
+  color: #b2b2b2;
+}
+header nav ul li a:hover {
+  color: #6a4a3c;
+}
 header nav ul li:last-child {
   padding-right: 1em;
 }
@@ -427,6 +434,10 @@ header .menu-avatar {
 .how-to-work {
   max-width: 1100px;
   margin: 2.5em auto;
+}
+.how-to-work .icon-check {
+  position: relative;
+  top: 15px;
 }
 .how-to-work .step-1,
 .how-to-work .step-2,
@@ -805,6 +816,7 @@ footer .footer-credits {
   width: 15%;
 }
 .tweets-content .new-tweet .write-tweet {
+  line-height: 50px;
   height: 100%;
   float: right;
   background-color: #f4f4f4;
